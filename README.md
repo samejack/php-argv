@@ -26,6 +26,19 @@ $string = '-h 127.0.0.1 -u=user -p passwd --debug --max-size=3 test';
 
 print_r($argvParser->parseConfigs($string));
 ```
+Output:
+```php
+Array
+(
+    [h] => 127.0.0.1
+    [u] => user
+    [p] => passwd
+    [debug] => 1
+    [max-size] => 3
+    [test] => 1
+)
+```
+
 
 ## License
 Apache License 2.0
