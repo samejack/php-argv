@@ -42,9 +42,6 @@ class PHP_ArgvParser
                 } else {
                     $configs[$matches[1]] = true;
                 }
-            } else if (preg_match('/^[-\=]*?(.+)\=(.+)$/', $argv[$index], $matches) === 1) {
-                // match -xxx=123 pattern
-                $configs[$matches[1]] = $matches[2];
             }
             $index++;
         }
