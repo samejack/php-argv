@@ -1,6 +1,7 @@
 {
   "name": "samejack/php-argv",
   "description": "PHP CLI arguments parse.",
+  "homepage": "https://github.com/samejack/php-argv",
   "keywords": ["cli", "php"],
   "license": "Apache-2.0",
   "type": "library",
@@ -22,8 +23,6 @@
      "satooshi/php-coveralls": "dev-master"
   },
   "autoload": {
-    "classmap": [
-       "src/"
-    ]
+    "psr-4": {"samejack\\": "src/"}
   }
 }
