@@ -1,6 +1,6 @@
 <?php
 
-namespace samejack;
+namespace samejack\PHP;
 
 class PHP_ArgvParser
 {

@@ -1,8 +1,10 @@
 <?php
 
-use samejack\PHP_ArgvParser;
+namespace samejack\PHP;
 
-class PHP_ArgvParserTest extends \PHPUnit_Framework_TestCase
+use samejack\PHP\ArgvParser;
+
+class ArgvParserTest extends \PHPUnit_Framework_TestCase
 {
 
     public function testParseConfigs()
