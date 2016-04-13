@@ -1,4 +1,7 @@
-# php-argv [![Build Status](https://travis-ci.org/samejack/php-argv.svg?branch=master)](https://travis-ci.org/samejack/php-argv) [![Coverage Status](https://coveralls.io/repos/samejack/php-argv/badge.svg?branch=master)](https://coveralls.io/r/samejack/php-argv?branch=master)
+# php-argv
+[![Latest Stable Version](https://poser.pugx.org/samejack/php-argv/v/stable)](https://packagist.org/packages/samejack/php-argv)
+[![Build Status](https://travis-ci.org/samejack/php-argv.svg?branch=master)](https://travis-ci.org/samejack/php-argv) [![Coverage Status](https://coveralls.io/repos/samejack/php-argv/badge.svg?branch=master)](https://coveralls.io/r/samejack/php-argv?branch=master)
+[![License](https://poser.pugx.org/samejack/php-argv/license)](https://packagist.org/packages/samejack/php-argv)
 
 PHP CLI (command-line interface) argurments parser. PHP-Argv can parse rich pattern, such as the follows
 
