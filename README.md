@@ -5,6 +5,21 @@
 
 PHP CLI (command-line interface) argurments parser. PHP-Argv can parse rich pattern, such as the follows
 
+## Install by composer
+make your composer.json file
+```javascript
+{
+    "require": {
+        "samejack/php-argv": "dev-master"
+    }
+}
+```
+run composer command
+```
+composer install
+```
+
+## CLI Example
 ```
 $ ./example/bin-cli -h 127.0.0.1 -u=user -p passwd --debug --max-size=3 test
 Array
@@ -18,7 +33,7 @@ Array
 )
 ```
 
-## Example
+## PHP Example
 ```php
 <?php
 include_once(__DIR__ . '/../src/PHP/ArgvParser.php');
