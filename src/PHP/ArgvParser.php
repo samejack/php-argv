@@ -39,6 +39,10 @@ class PHP_ArgvParser
                     // have sub parameter
                     $configs[$matches[1]] = $argv[$index + 1];
                     $index++;
+                } elseif (strpos($matches[0], '--') === false) {
+                    for ($j = 0; $j < strlen($matches[1]); $j += 1) {
+                        $configs[$matches[1][$j]] = true;
+                    }
                 } else {
                     $configs[$matches[1]] = true;
                 }
