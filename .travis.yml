@@ -2,7 +2,10 @@ language: php
 
 php:
   - 5.6
+<<<<<<< 3819fd2e7bf0c089c1940dfb7fe8ed3f7fa9c58a
   - 7.1
+=======
+>>>>>>> travis ci test in php 5.6 and 7.2
   - 7.2
   - 7.3
   

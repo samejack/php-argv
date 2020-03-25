@@ -18,9 +18,15 @@
   },
   "require-dev": {
      "php": ">=5.3.0",
+<<<<<<< 3819fd2e7bf0c089c1940dfb7fe8ed3f7fa9c58a
      "phpunit/phpunit": "^7",
      "squizlabs/php_codesniffer": "1.4.*@stable",
      "php-coveralls/php-coveralls": "2.2.*@stable"
+=======
+     "phpunit/phpunit": "*@stable",
+     "squizlabs/php_codesniffer": "*@stable",
+     "php-coveralls/php-coveralls": "*@stable"
+>>>>>>> travis ci test in php 5.6 and 7.2
   },
   "autoload": {
     "psr-4": {"samejack\\": "src/"}
