@@ -33,6 +33,11 @@ class ArgvParserTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($result['max-size'], '3');
         $this->assertEquals($result['test'], true);
 
+        $option = '--foo bar-baz';
+
+        $result = $argvParser->parseConfigs($option);
+        $this->assertEquals($result['foo'], 'bar-baz');
+
         global $argv;
         $argv = array_merge(array('filename'), $commandArr);
 
@@ -44,6 +49,7 @@ class ArgvParserTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($result['debug'], true);
         $this->assertEquals($result['max-size'], '3');
         $this->assertEquals($result['test'], true);
+
     }
 
 }

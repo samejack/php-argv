@@ -39,6 +39,9 @@ class PHP_ArgvParser
                     // have sub parameter
                     $configs[$matches[1]] = $argv[$index + 1];
                     $index++;
+                } else if (isset($argv[$index + 1]) && preg_match('/^[^-].+$/', $argv[$index + 1]) === 1) {
+                    $configs[$matches[1]] = $argv[$index + 1];
+                    $index++;
                 } else {
                     $configs[$matches[1]] = true;
                 }
