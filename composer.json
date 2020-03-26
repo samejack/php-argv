@@ -17,8 +17,7 @@
     "php": ">=5.3.0"
   },
   "require-dev": {
-     "php": ">=5.3.0",
-     "phpunit/phpunit": "*@stable",
+     "phpunit/phpunit": "~4.8|~5.7",
      "squizlabs/php_codesniffer": "*@stable",
      "php-coveralls/php-coveralls": "*@stable"
   },
