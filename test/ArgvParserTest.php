@@ -7,6 +7,15 @@ use samejack\PHP\ArgvParser;
 class ArgvParserTest extends \PHPUnit_Framework_TestCase
 {
 
+    public function testSingleArgument()
+    {
+        $argvParser = new PHP_ArgvParser();
+
+        $string = '--ok';
+        $result = $argvParser->parseConfigs($string);
+        $this->assertEquals($result['ok'], true);
+    }
+
     public function testParseConfigs()
     {
         $argvParser = new PHP_ArgvParser();
