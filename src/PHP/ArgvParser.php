@@ -2,7 +2,7 @@
 
 namespace samejack\PHP;
 
-class PHP_ArgvParser
+class ArgvParser
 {
     const MAX_ARGV = 1000;
 
