@@ -2,14 +2,12 @@
 
 namespace samejack\PHP;
 
-use samejack\PHP\ArgvParser;
-
 class ArgvParserTest extends \PHPUnit_Framework_TestCase
 {
 
     public function testSingleArgument()
     {
-        $argvParser = new PHP_ArgvParser();
+        $argvParser = new ArgvParser();
 
         $string = '--ok';
         $result = $argvParser->parseConfigs($string);
@@ -18,7 +16,7 @@ class ArgvParserTest extends \PHPUnit_Framework_TestCase
 
     public function testParseConfigs()
     {
-        $argvParser = new PHP_ArgvParser();
+        $argvParser = new ArgvParser();
 
         $string = '-h 127.0.0.1 -u=user -p passwd --debug --max-size=3 test';
 

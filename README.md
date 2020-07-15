@@ -6,18 +6,10 @@
 PHP CLI (command-line interface) argurments parser. PHP-Argv can parse rich pattern, such as the follows
 
 ## Install by composer
-make your composer.json file
 ```javascript
-{
-    "require": {
-        "samejack/php-argv": "dev-master"
-    }
-}
+composer require samejack/php-argv
 ```
-run composer command
-```
-composer install
-```
+
 
 ## CLI Example
 ```
@@ -36,7 +28,7 @@ Array
 ## PHP Example
 ```php
 <?php
-include_once(__DIR__ . '/../src/PHP/ArgvParser.php');
+require_once(__DIR__ . '/vendor/autoload.php');
 
 $argvParser = new \samejack\PHP\ArgvParser();
 
